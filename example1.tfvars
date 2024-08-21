@@ -90,7 +90,7 @@ mysql_flexible_server = {
         #   # lz_key          = ""   # If the DNS keys are deployed in a remote landingzone
         #   keys = ["privatelink"]
         # }
-      }        
+      }
     }
 
   }
@@ -126,18 +126,18 @@ vnets = {
         enforce_private_link_endpoint_network_policies = true
         enforce_private_link_service_network_policies  = false
       }
-    #   mysql = {
-    #     name                                           = "mysql"
-    #     cidr                                           = ["10.10.0.128/25"]
-    #     enforce_private_link_endpoint_network_policies = true
-    #     delegation = {
-    #       name               = "mysql"
-    #       service_delegation = "Microsoft.DBforMySQL/flexibleServers"
-    #       actions = [
-    #         "Microsoft.Network/virtualNetworks/subnets/join/action",
-    #       ]
-    #     }
-    #   }
+      #   mysql = {
+      #     name                                           = "mysql"
+      #     cidr                                           = ["10.10.0.128/25"]
+      #     enforce_private_link_endpoint_network_policies = true
+      #     delegation = {
+      #       name               = "mysql"
+      #       service_delegation = "Microsoft.DBforMySQL/flexibleServers"
+      #       actions = [
+      #         "Microsoft.Network/virtualNetworks/subnets/join/action",
+      #       ]
+      #     }
+      #   }
     }
   }
 }

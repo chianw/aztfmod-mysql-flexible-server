@@ -1,5 +1,11 @@
 terraform {
   required_providers {
+    azapi = {
+      source = "Azure/azapi"
+    }
+    azurerm = {
+      source = "hashicorp/azurerm"
+    }
   }
   required_version = ">= 1.9.2"
 }
@@ -15,8 +21,8 @@ provider "azurerm" {
 }
 
 module "caf" {
-  source  = "github.com/chianw/terraform-azurerm-caf?ref=mysqlflexpe"
-#   version = "5.7.13"
+  source = "github.com/chianw/terraform-azurerm-caf?ref=mysqlflexpe"
+  #   version = "5.7.13"
 
   providers = {
     azurerm.vhub = azurerm.vhub

@@ -17,5 +17,5 @@ variable "mysql_flexible_server" {
 }
 
 variable "dns_zones" {
-    default = {}
+  default = {}
 }
